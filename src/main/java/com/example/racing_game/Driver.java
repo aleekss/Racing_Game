@@ -15,7 +15,7 @@ public class Driver extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-
+        System.out.println("HAllo");
 
 
         FXMLLoader fxmlLoader = new FXMLLoader(Driver.class.getResource("menu.fxml"));
