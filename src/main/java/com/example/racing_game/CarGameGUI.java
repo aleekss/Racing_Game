@@ -96,7 +96,7 @@ public class CarGameGUI {
         PauseTransition delay = new PauseTransition(Duration.seconds(3));
         delay.setOnFinished(event -> window.close());
         delay.play();
-        System.out.println("Hallo");
+
     }
 
 }
