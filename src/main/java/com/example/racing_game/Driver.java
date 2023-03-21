@@ -19,7 +19,7 @@ public class Driver extends Application {
 
 
         FXMLLoader fxmlLoader = new FXMLLoader(Driver.class.getResource("menu.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 500 , 500);
+        Scene scene = new Scene(fxmlLoader.load(), 1000, 800);
 
 
         stage.setScene(scene);
