@@ -31,7 +31,7 @@ public class CarGameGUI {
         FXMLLoader fxmlLoader = new FXMLLoader(Driver.class.getResource("loading.fxml"));
 
         Stage window = (Stage)playButton.getScene().getWindow();
-        Scene loadingScene = new Scene(fxmlLoader.load(),500,500);
+        Scene loadingScene = new Scene(fxmlLoader.load(),1000,800);
 
         // Get the progress bar from the loading scene
         ProgressBar progressBar = (ProgressBar) loadingScene.lookup("#progressBar");
@@ -69,7 +69,7 @@ public class CarGameGUI {
         task.setOnSucceeded(event -> {
             try {
                 FXMLLoader gameLoader = new FXMLLoader(Driver.class.getResource("game.fxml"));
-                Scene gameScene = new Scene(gameLoader.load(), 500, 500);
+                Scene gameScene = new Scene(gameLoader.load(), 1000, 800);
 
                 // Set the scene to the game scene
                 window.setScene(gameScene);
