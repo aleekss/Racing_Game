@@ -1,9 +1,12 @@
 package com.example.racing_game;
 
+import javafx.animation.KeyFrame;
 import javafx.animation.PauseTransition;
+import javafx.animation.Timeline;
 import javafx.animation.TranslateTransition;
 import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -24,6 +27,10 @@ public class CarGameGUI {
     public Button playButton;
     public Button creditsButton;
     public Button exitButton;
+
+    private double roadPosition = 0.0;
+    private double roadSpeed = 2.0;
+    private Timeline animation;
 
     public void onPlayButtonClick(ActionEvent actionEvent) throws IOException {
 
@@ -98,5 +105,7 @@ public class CarGameGUI {
         delay.play();
         System.out.println("Hallo");
     }
+
+
 
 }
