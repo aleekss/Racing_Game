@@ -89,7 +89,7 @@ public class CarGameGUI {
     public void onExitButtonClick(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Driver.class.getResource("exit.fxml"));
         Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        Scene loadingScene = new Scene(fxmlLoader.load(), 500, 500);
+        Scene loadingScene = new Scene(fxmlLoader.load(), 1000, 800);
         window.setScene(loadingScene);
         window.show();
 
