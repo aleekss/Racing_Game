@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Line?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.racing_game.GameController">
-    <AnchorPane fx:id="roadPane" onKeyPressed="#onStartGame" prefHeight="1000.0" prefWidth="800.0" style="-fx-background-color: grey;">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.racing_game.CarGameGUI">
+    <AnchorPane fx:id="roadPane" prefHeight="1000.0" prefWidth="800.0" style="-fx-background-color: grey;">
+        <VBox layoutX="362.0" layoutY="-80.0" prefHeight="101.0" prefWidth="79.0">
+            <children>
+                <ImageView fx:id="hindernis1" fitHeight="81.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/icons8-wheel-50.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </VBox>
+        <VBox layoutX="562.0" layoutY="-105.0" prefHeight="122.0" prefWidth="79.0">
+            <children>
+                <ImageView fx:id="hindernis2" fitHeight="81.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/icons8-wheel-50.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </VBox>
+        <VBox layoutX="463.0" layoutY="-107.0" prefHeight="130.0" prefWidth="79.0">
+            <children>
+                <ImageView fx:id="hindernis" fitHeight="81.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/icons8-wheel-50.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </VBox>
 
         <Line endX="550" endY="1110.0" startX="550" startY="0" stroke="WHITE" strokeDashArray="80" strokeWidth="20" />
         <Line endX="450" endY="1098.0" startX="450" startY="0" stroke="WHITE" strokeDashArray="80" strokeWidth="20" />
@@ -19,3 +46,4 @@
 
     </AnchorPane>
 </VBox>
+
