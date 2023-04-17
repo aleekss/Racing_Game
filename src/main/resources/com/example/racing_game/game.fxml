@@ -4,8 +4,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
-    <AnchorPane fx:id="roadPane" prefHeight="1000.0" prefWidth="800.0" style="-fx-background-color: grey;">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.racing_game.GameController">
+    <AnchorPane fx:id="roadPane" onKeyPressed="#onStartGame" prefHeight="1000.0" prefWidth="800.0" style="-fx-background-color: grey;">
 
         <Line endX="550" endY="1110.0" startX="550" startY="0" stroke="WHITE" strokeDashArray="80" strokeWidth="20" />
         <Line endX="450" endY="1098.0" startX="450" startY="0" stroke="WHITE" strokeDashArray="80" strokeWidth="20" />

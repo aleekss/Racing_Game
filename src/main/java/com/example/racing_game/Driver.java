@@ -21,6 +21,7 @@ public class Driver extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 1000, 800);
 
 
+
         stage.setScene(scene);
         stage.show();
 

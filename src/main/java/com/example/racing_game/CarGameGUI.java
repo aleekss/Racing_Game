@@ -88,6 +88,11 @@ public class CarGameGUI {
     }
 
 
+    public void onStartGame(ActionEvent actionEvent) {
+        System.out.println("start");
+
+    }
+
     public void onCreditsButtonClick(ActionEvent actionEvent) {
 
 
